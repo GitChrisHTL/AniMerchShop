@@ -123,6 +123,12 @@ dist
 .vscode-test
 
 # yarn v2
+
+# idea
+.idea/
+
+# angular cache
+.angular/cache/
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml

@@ -44,6 +44,11 @@ export class DetailedProductComponent {
   }
 
   onAddToShoppingCart() {
+    let cartCount = document.getElementById("cartCount");
+    // @ts-ignore
+    let newCartCount = parseInt(cartCount.textContent) + 1;
+    // @ts-ignore
+    cartCount.textContent = newCartCount.toString();
     console.log(this.product?.name + ' added to your shopping cart!');
     void this.router.navigate(['']);
   }

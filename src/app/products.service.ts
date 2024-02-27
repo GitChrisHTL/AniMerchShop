@@ -8,6 +8,20 @@ export class ProductsService {
   products : ProductInterface[] = [
     {
       productId: 0,
+      image: "./assets/products/tanjirokimono.jpg",
+      smallImage: "./assets/detailedProducts/tanjirokimono1.jpg",
+      smallImage2: "./assets/detailedProducts/tanjirokimono2.jpg",
+      series: "Demon Slayer",
+      name: "Tanjiro Kamado Kimono",
+      price: 26.13,
+      preOrder: false,
+      preOrderDate: "",
+      sale: true,
+      saleReduction: 0.54,
+      type: "Figure"
+    },
+    {
+      productId: 1,
       image: "./assets/products/tohka.jpg",
       smallImage: "./assets/detailedProducts/tohka1.jpg",
       smallImage2: "./assets/detailedProducts/tohka2.jpg",
@@ -21,7 +35,7 @@ export class ProductsService {
       type: "Figure"
     },
     {
-      productId: 1,
+      productId: 2,
       image: "./assets/products/ganyu.jpg",
       smallImage: "./assets/detailedProducts/ganyu1.jpg",
       smallImage2: "./assets/detailedProducts/ganyu2.jpg",
@@ -35,7 +49,7 @@ export class ProductsService {
       type: "Figure"
     },
     {
-      productId: 2,
+      productId: 3,
       image: "./assets/products/makise.jpg",
       smallImage: "./assets/detailedProducts/makise1.jpg",
       smallImage2: "./assets/detailedProducts/makise2.jpg",
@@ -63,7 +77,7 @@ export class ProductsService {
       type: "Figure"
     },
     {
-      productId: 3,
+      productId: 5,
       image: "./assets/products/sentouki.jpg",
       smallImage: "./assets/detailedProducts/sentouki1.jpg",
       smallImage2: "./assets/detailedProducts/sentouki2.jpg",
@@ -77,7 +91,7 @@ export class ProductsService {
       type: "Figure"
     },
     {
-      productId: 5,
+      productId: 6,
       image: "./assets/products/bluelock1.jpg",
       smallImage: "./assets/detailedProducts/bluelock11.jpg",
       smallImage2: "./assets/detailedProducts/bluelock12.jpg",
@@ -91,7 +105,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 6,
+      productId: 7,
       image: "./assets/products/bluelock2.jpg",
       smallImage: "https://solarisjapan.com/cdn/shop/products/FIGURE-133246_05.jpg?v=1636453577&width=3000",
       smallImage2: "./assets/detailedProducts/bluelock22.jpg",
@@ -105,7 +119,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 7,
+      productId: 8,
       image: "./assets/products/bluelock3.jpg",
       smallImage: "https://solarisjapan.com/cdn/shop/products/FIGURE-133246_05.jpg?v=1636453577&width=3000",
       smallImage2: "./assets/detailedProducts/bluelock32.jpg",
@@ -119,7 +133,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 8,
+      productId: 9,
       image: "./assets/products/bluelock4.jpg",
       smallImage: "https://solarisjapan.com/cdn/shop/products/FIGURE-133246_05.jpg?v=1636453577&width=3000",
       smallImage2: "./assets/detailedProducts/bluelock42.jpg",
@@ -133,7 +147,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 9,
+      productId: 10,
       image: "./assets/products/tbhk1.jpg",
       smallImage: "./assets/detailedProducts/tbhk11.jpg",
       smallImage2: "./assets/detailedProducts/tbhk12.jpg",
@@ -147,7 +161,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 10,
+      productId: 11,
       image: "./assets/products/tbhk19.jpg",
       smallImage: "https://solarisjapan.com/cdn/shop/products/FIGURE-133246_05.jpg?v=1636453577&width=3000",
       smallImage2: "./assets/detailedProducts/tbhk192.jpg",

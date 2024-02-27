@@ -1,0 +1,58 @@
+<main *ngIf="this.product !== undefined; else doesNotExist">
+  <img id="bigPic" [src]="this.product?.image">
+  <div id="morePics">
+    <img id="smallPic1" [src]="this.product?.smallImage">
+    <img id="smallPic2" [src]="this.product?.smallImage2">
+  </div>
+  <img id="heart" src="./assets/heart.png">
+  <div id="rightSide">
+    <div class="rating">
+      <img src="./assets/star-outline-rounded.svg">
+      <img src="./assets/star-outline-rounded.svg">
+      <img src="./assets/star-outline-rounded.svg">
+      <img src="./assets/star-outline-rounded.svg">
+      <img src="./assets/star-outline-rounded.svg">
+      <p>0 Rating(s)</p>
+    </div>
+    <h1 id="title">{{ this.product?.name }}</h1>
+    <div id="twoButtons">
+      <a (click)="onAddToShoppingCart()"><div id="orderbutton">
+        @if (product?.preOrder) {
+          <div style="display: block; margin-bottom: 5%">
+            <h1 id="preOrder">Pre Order Now </h1>
+            <h4>(Shipping on release)</h4>
+          </div>
+        } @else {
+          <h1 style="margin-bottom: 3%">Order now</h1>
+        }
+        @if (product?.sale) {
+          <div style="display: block; margin-bottom: 2%;">
+            <s><h2 style="margin-left: 15%">{{ product.price }}€</h2></s>
+            <h1>{{ product.price * product.saleReduction }}€</h1>
+          </div>
+        } @else {
+          <h1 id="price">{{ this.product?.price }}€</h1>
+        }
+      </div></a>
+      <div id="infoButton">
+        @if (product?.preOrder) {
+          <div style="display: block; margin-bottom: 5%">
+            <h4 id="release">Releases on: </h4>
+            <h1>{{ product?.preOrderDate }}</h1>
+          </div>
+          <div style="display: flex; margin-left: 20%; margin-top: -3%">
+            <h1 style="font-size: xx-large">{{ differenceInDays }}</h1>
+            <h2 style="margin-top: 30%">Day(s)</h2>
+          </div>
+        } @else {
+          <h2 style="margin-bottom: 4%">Stock:</h2>
+          <h1 id="stock" style="margin-bottom: 4%">57 pieces</h1>
+        }
+      </div>
+    </div>
+    <hr>
+  </div>
+</main>
+<ng-template #doesNotExist>
+  <img id="doesNotExist" src="assets/ProductDoesNotExist.png">
+</ng-template>

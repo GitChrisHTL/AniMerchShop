@@ -49,6 +49,20 @@ export class ProductsService {
       type: "Figure"
     },
     {
+      productId: 4,
+      image: "./assets/products/frieren.jpg",
+      smallImage: "./assets/detailedProducts/frieren1.jpg",
+      smallImage2: "./assets/detailedProducts/frieren2.jpg",
+      series: "Sousou no Frieren",
+      name: "Frieren - 1/7 (Kotobukiya)",
+      price: 125.95,
+      preOrder: true,
+      preOrderDate: "31.10.24",
+      sale: true,
+      saleReduction: 0.8,
+      type: "Figure"
+    },
+    {
       productId: 3,
       image: "./assets/products/sentouki.jpg",
       smallImage: "./assets/detailedProducts/sentouki1.jpg",
@@ -63,7 +77,7 @@ export class ProductsService {
       type: "Figure"
     },
     {
-      productId: 4,
+      productId: 5,
       image: "./assets/products/bluelock1.jpg",
       smallImage: "./assets/detailedProducts/bluelock11.jpg",
       smallImage2: "./assets/detailedProducts/bluelock12.jpg",
@@ -77,7 +91,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 5,
+      productId: 6,
       image: "./assets/products/bluelock2.jpg",
       smallImage: "https://solarisjapan.com/cdn/shop/products/FIGURE-133246_05.jpg?v=1636453577&width=3000",
       smallImage2: "./assets/detailedProducts/bluelock22.jpg",
@@ -91,7 +105,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 6,
+      productId: 7,
       image: "./assets/products/bluelock3.jpg",
       smallImage: "https://solarisjapan.com/cdn/shop/products/FIGURE-133246_05.jpg?v=1636453577&width=3000",
       smallImage2: "./assets/detailedProducts/bluelock32.jpg",
@@ -105,7 +119,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 7,
+      productId: 8,
       image: "./assets/products/bluelock4.jpg",
       smallImage: "https://solarisjapan.com/cdn/shop/products/FIGURE-133246_05.jpg?v=1636453577&width=3000",
       smallImage2: "./assets/detailedProducts/bluelock42.jpg",
@@ -119,7 +133,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 8,
+      productId: 9,
       image: "./assets/products/tbhk1.jpg",
       smallImage: "./assets/detailedProducts/tbhk11.jpg",
       smallImage2: "./assets/detailedProducts/tbhk12.jpg",
@@ -133,7 +147,7 @@ export class ProductsService {
       type: "Manga"
     },
     {
-      productId: 9,
+      productId: 10,
       image: "./assets/products/tbhk19.jpg",
       smallImage: "https://solarisjapan.com/cdn/shop/products/FIGURE-133246_05.jpg?v=1636453577&width=3000",
       smallImage2: "./assets/detailedProducts/tbhk192.jpg",

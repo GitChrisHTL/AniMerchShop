@@ -22,13 +22,20 @@ To run AniMerchShop locally, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/GitChrisHTL/AniMerchShop.git
-=======
+  ```bash
+  git clone https://github.com/GitChrisHTL/AniMerchShop.git
+  ````
+    
+2. Open the project in WebStorm
+3. Open a terminal (Alt+F12) and run npm install:
+
+  ```bash
+  npm install
+  ````
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. If an error occurs, try to remove node_modules with `rm node_modules` and reinstall them. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

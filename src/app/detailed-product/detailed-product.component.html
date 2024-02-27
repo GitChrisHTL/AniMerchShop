@@ -18,17 +18,17 @@
     <div id="twoButtons">
       <a (click)="onAddToShoppingCart()"><div id="orderbutton">
         @if (product?.preOrder) {
-          <div style="display: block; margin-bottom: 5%">
-            <h1 id="preOrder">Pre Order Now </h1>
+          <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 5%;">
+            <h1 id="preOrder">Pre Order Now</h1><hr>
             <h4>(Shipping on release)</h4>
           </div>
         } @else {
           <h1 style="margin-bottom: 3%">Order now</h1>
         }
         @if (product?.sale) {
-          <div style="display: block; margin-bottom: 2%;">
-            <s><h2 style="margin-left: 15%">{{ product.price }}€</h2></s>
-            <h1>{{ product.price * product.saleReduction }}€</h1>
+          <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 5%;">
+            <s><h3>{{ product.price }}€</h3></s>
+            <h1>{{ product.price * product.saleReduction | number:'1.2-2' }}€</h1>
           </div>
         } @else {
           <h1 id="price">{{ this.product?.price }}€</h1>
@@ -36,13 +36,13 @@
       </div></a>
       <div id="infoButton">
         @if (product?.preOrder) {
-          <div style="display: block; margin-bottom: 5%">
-            <h4 id="release">Releases on: </h4>
+          <div style="width: 30%; display: flex; flex-direction: column; align-items: center; margin-bottom: 5%;">
+            <h4>Releases on:</h4>
             <h1>{{ product?.preOrderDate }}</h1>
           </div>
-          <div style="display: flex; margin-left: 20%; margin-top: -3%">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-left: 15%; margin-bottom: 5%">
             <h1 style="font-size: xx-large">{{ differenceInDays }}</h1>
-            <h2 style="margin-top: 30%">Day(s)</h2>
+            <h3 style="font-size: x-large">Day(s)</h3>
           </div>
         } @else {
           <h2 style="margin-bottom: 4%">Stock:</h2>

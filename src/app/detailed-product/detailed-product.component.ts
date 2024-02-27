@@ -2,7 +2,7 @@ import {Component, inject} from '@angular/core';
 import {ProductInterface} from "../product-interface";
 import {ProductsService} from "../products.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {NgIf} from "@angular/common";
+import {DecimalPipe, NgIf} from "@angular/common";
 import {FooterComponent} from "../footer/footer.component";
 
 @Component({
@@ -10,7 +10,8 @@ import {FooterComponent} from "../footer/footer.component";
   standalone: true,
   imports: [
     NgIf,
-    FooterComponent
+    FooterComponent,
+    DecimalPipe
   ],
   templateUrl: './detailed-product.component.html',
   styleUrl: './detailed-product.component.css'

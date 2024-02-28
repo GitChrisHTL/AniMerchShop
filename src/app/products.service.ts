@@ -19,7 +19,7 @@ export class ProductsService {
       sale: true,
       saleReduction: 0.54,
       stock: 17,
-      description: "Inspired by the iconic character from Demon Slayer. Crafted with high-quality materials, it offers both comfort and durability. Perfect for cosplayers seeking authenticity.",
+      description: "Inspired by the iconic character from \"Demon Slayer\". Crafted with high-quality materials, it offers both comfort and durability. Perfect for cosplayers seeking authenticity.",
       type: "Apparel"
     },
     {
@@ -35,7 +35,7 @@ export class ProductsService {
       sale: false,
       saleReduction: 0,
       stock: 84,
-      description: "",
+      description: "This intricately designed figure faithfully captures the essence of the beloved character from \"Date A Live\" in a new years theme. Whether you're a passionate collector or a fan of the series, this figure is a must-have addition to your collection, destined to become the centerpiece of any display.",
       type: "Figure"
     },
     {
@@ -51,7 +51,7 @@ export class ProductsService {
       sale: false,
       saleReduction: 0,
       stock: 100,
-      description: "",
+      description: "This exquisite figure brings the beloved character from \"Genshin Impact\" to life with unparalleled detail and craftsmanship. Whether you're a devoted fan of \"Genshin Impact\" or an avid collector, this figure is sure to captivate with its stunning beauty and quality craftsmanship, making it a prized addition to any collection.",
       type: "Figure"
     },
     {
@@ -67,7 +67,7 @@ export class ProductsService {
       sale: true,
       saleReduction: 0.9,
       stock: 100,
-      description: "",
+      description: "This stunning figure brings the beloved character from \"Steins;Gate\" to life in a elegant bridal ensemble. Whether you're a devoted fan of \"Steins;Gate\" or a collector of fine figures, this masterpiece is sure to become the centerpiece of your collection, capturing the timeless beauty of Makise Kurisu in all her glory.",
       type: "Figure"
     },
     {
@@ -83,7 +83,7 @@ export class ProductsService {
       sale: true,
       saleReduction: 0.8,
       stock: 100,
-      description: "",
+      description: "This exquisite figure brings the beloved character from \"Frieren: Beyond Journey's End\" to life with unparalleled detail and craftsmanship. Whether you're a devoted fan of \"Frieren: Beyond Journey's End\" or an avid collector, this figure is sure to captivate with its stunning beauty and quality craftsmanship, making it a prized addition to any collection.",
       type: "Figure"
     },
     {
@@ -99,7 +99,7 @@ export class ProductsService {
       sale: true,
       saleReduction: 0.8,
       stock: 21,
-      description: "",
+      description: "This striking figure brings the iconic card to life with impeccable detail and craftsmanship. Whether you're a dedicated \"Yu-Gi-Oh!\" fan, a player of this deck theme or a collector of exquisite figures, this masterpiece is sure to command attention and admiration, making it a must-have addition to any collection.",
       type: "Figure"
     },
     {
@@ -115,7 +115,7 @@ export class ProductsService {
       sale: false,
       saleReduction: 0,
       stock: 85,
-      description: "",
+      description: "Dive into the world of intense competition and high-stakes matches as talented young players vie for a chance at glory in the Blue Lock program. With dynamic artwork and compelling storytelling, \"Blue Lock\" is sure to capture every soccer fan.",
       type: "Manga"
     },
     {
@@ -131,7 +131,7 @@ export class ProductsService {
       sale: false,
       saleReduction: 0,
       stock: 30,
-      description: "",
+      description: "Dive into the world of intense competition and high-stakes matches as talented young players vie for a chance at glory in the Blue Lock program. With dynamic artwork and compelling storytelling, \"Blue Lock\" is sure to capture every soccer fan.",
       type: "Manga"
     },
     {
@@ -147,7 +147,7 @@ export class ProductsService {
       sale: false,
       saleReduction: 0,
       stock: 11,
-      description: "",
+      description: "Dive into the world of intense competition and high-stakes matches as talented young players vie for a chance at glory in the Blue Lock program. With dynamic artwork and compelling storytelling, \"Blue Lock\" is sure to capture every soccer fan.",
       type: "Manga"
     },
     {
@@ -163,7 +163,7 @@ export class ProductsService {
       sale: false,
       saleReduction: 0,
       stock: 39,
-      description: "",
+      description: "Dive into the world of intense competition and high-stakes matches as talented young players vie for a chance at glory in the Blue Lock program. With dynamic artwork and compelling storytelling, \"Blue Lock\" is sure to capture every soccer fan.",
       type: "Manga"
     },
     {
@@ -179,7 +179,7 @@ export class ProductsService {
       sale: false,
       saleReduction: 0,
       stock: 81,
-      description: "",
+      description: "Step into the mysterious world of Kamome Academy, where rumors swirl about the enigmatic ghost, Hanako-san, who haunts the school's bathrooms. Follow Nene Yashiro as she strikes a deal with Hanako-san and becomes entangled in a series of otherworldly adventures. With captivating artwork and a spellbinding narrative, \"Toilet-Bound Hanako-Kun\" is sure to capture fans of the supernatural.",
       type: "Manga"
     },
     {
@@ -195,7 +195,7 @@ export class ProductsService {
       sale: false,
       saleReduction: 0,
       stock: 71,
-      description: "",
+      description: "Step into the mysterious world of Kamome Academy, where rumors swirl about the enigmatic ghost, Hanako-san, who haunts the school's bathrooms. Follow Nene Yashiro as she strikes a deal with Hanako-san and becomes entangled in a series of otherworldly adventures. With captivating artwork and a spellbinding narrative, \"Toilet-Bound Hanako-Kun\" is sure to capture fans of the supernatural.",
       type: "Manga"
     }
   ];

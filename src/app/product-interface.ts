@@ -10,5 +10,7 @@ export interface ProductInterface {
   preOrderDate : string,
   sale : boolean,
   saleReduction : number,
+  stock : number,
+  description : string,
   type : string
 }

@@ -46,11 +46,12 @@
           </div>
         } @else {
           <h2 style="margin-bottom: 4%">Stock:</h2>
-          <h1 id="stock" style="margin-bottom: 4%">57 pieces</h1>
+          <h1 id="stock" style="margin-bottom: 4%">{{ product?.stock}} pieces</h1>
         }
       </div>
     </div>
     <hr>
+    <p style="font-size: x-large">{{product?.description}}</p>
   </div>
 </main>
 <ng-template #doesNotExist>

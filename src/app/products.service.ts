@@ -18,6 +18,8 @@ export class ProductsService {
       preOrderDate: "",
       sale: true,
       saleReduction: 0.54,
+      stock: 17,
+      description: "Inspired by the iconic character from Demon Slayer. Crafted with high-quality materials, it offers both comfort and durability. Perfect for cosplayers seeking authenticity.",
       type: "Apparel"
     },
     {
@@ -32,6 +34,8 @@ export class ProductsService {
       preOrderDate: "",
       sale: false,
       saleReduction: 0,
+      stock: 84,
+      description: "",
       type: "Figure"
     },
     {
@@ -46,6 +50,8 @@ export class ProductsService {
       preOrderDate: "08.07.24",
       sale: false,
       saleReduction: 0,
+      stock: 100,
+      description: "",
       type: "Figure"
     },
     {
@@ -60,6 +66,8 @@ export class ProductsService {
       preOrderDate: "01.09.24",
       sale: true,
       saleReduction: 0.9,
+      stock: 100,
+      description: "",
       type: "Figure"
     },
     {
@@ -74,6 +82,8 @@ export class ProductsService {
       preOrderDate: "31.10.24",
       sale: true,
       saleReduction: 0.8,
+      stock: 100,
+      description: "",
       type: "Figure"
     },
     {
@@ -88,6 +98,8 @@ export class ProductsService {
       preOrderDate: "",
       sale: true,
       saleReduction: 0.8,
+      stock: 21,
+      description: "",
       type: "Figure"
     },
     {
@@ -102,6 +114,8 @@ export class ProductsService {
       preOrderDate: "",
       sale: false,
       saleReduction: 0,
+      stock: 85,
+      description: "",
       type: "Manga"
     },
     {
@@ -116,6 +130,8 @@ export class ProductsService {
       preOrderDate: "",
       sale: false,
       saleReduction: 0,
+      stock: 30,
+      description: "",
       type: "Manga"
     },
     {
@@ -130,6 +146,8 @@ export class ProductsService {
       preOrderDate: "",
       sale: false,
       saleReduction: 0,
+      stock: 11,
+      description: "",
       type: "Manga"
     },
     {
@@ -144,6 +162,8 @@ export class ProductsService {
       preOrderDate: "",
       sale: false,
       saleReduction: 0,
+      stock: 39,
+      description: "",
       type: "Manga"
     },
     {
@@ -158,6 +178,8 @@ export class ProductsService {
       preOrderDate: "",
       sale: false,
       saleReduction: 0,
+      stock: 81,
+      description: "",
       type: "Manga"
     },
     {
@@ -172,6 +194,8 @@ export class ProductsService {
       preOrderDate: "15.03.24",
       sale: false,
       saleReduction: 0,
+      stock: 71,
+      description: "",
       type: "Manga"
     }
   ];

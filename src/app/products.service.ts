@@ -18,7 +18,7 @@ export class ProductsService {
       preOrderDate: "",
       sale: true,
       saleReduction: 0.54,
-      type: "Figure"
+      type: "Apparel"
     },
     {
       productId: 1,

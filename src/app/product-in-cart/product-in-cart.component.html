@@ -1,0 +1,23 @@
+<div id="productInCartBox">
+  <div id="productInCartBoxImage">
+    <a [routerLink]="['/product', this.productInterface.productId]"><img [src]="productInterface.image"/></a>
+  </div>
+  <div id="productInCartBoxMain">
+    <h2>{{ productInterface.name }}</h2>
+    <p style="font-size: large">{{ productInterface.type }}</p>
+    @if(productInterface.stock > 0) {
+      <h3 style="color: #B15DA8; font-size: larger">In Stock</h3>
+    } @else {
+      <h3 style="color: #B15DA8; font-size: larger">Out Of Stock</h3>
+    }
+  </div>
+  <div id="productInCartBoxPrice">
+    @if(productInterface.sale) {
+      <h2 style="text-decoration: line-through">{{ productInterface.price }}€</h2>
+      <h1>{{ productInterface.price * productInterface.saleReduction | number:'1.2-2' }}€</h1>
+    } @else {
+      <h1>{{ productInterface.price }}€</h1>
+    }
+  </div>
+</div>
+<hr>

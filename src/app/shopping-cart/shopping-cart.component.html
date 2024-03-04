@@ -1,0 +1,31 @@
+<div id="shoppingCartHeadline">
+  <h2>Shopping Cart<hr></h2>
+</div>
+@if(productsInCart.length == 0) {
+  <p style="margin-top: 5vh;text-align: center">Your shopping cart is currently empty</p>
+  <a [routerLink]="''"><div id="continueShoppingButton">
+    <h2>Continue Shopping</h2>
+  </div></a>
+}
+<div>
+  <div>
+    <app-product-in-cart style="margin: 0 1% 0 1%"
+                 *ngFor="let currProduct of productsInCart"
+                 [productInterface]="currProduct">
+    </app-product-in-cart>
+  </div>
+  @if(productsInCart.length > 0) {
+    <div id="totalPrice">
+      <h2>Total:</h2>
+      <h1>{{ getTotalPrice() }}€</h1>
+    </div>
+    <div id="placeOrderButton">
+      <h2>Place Order</h2>
+    </div>
+  }
+</div>
+@if(productsInCart.length == 0) {
+  <app-footer style="width: 100vw; bottom: 0; position: fixed;"></app-footer>
+} @else {
+  <app-footer></app-footer>
+}

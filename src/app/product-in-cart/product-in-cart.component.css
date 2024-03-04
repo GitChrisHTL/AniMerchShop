@@ -1,0 +1,47 @@
+#productInCartBox {
+  width: 88vw;
+  height: auto;
+  margin-top: 3vh;
+  margin-left: 5vw;
+  display: flex;
+}
+
+#productInCartBox img {
+  width: 100%;
+  height: auto;
+  margin-left: 2vw;
+}
+
+#productInCartBoxImage {
+  width: 10%;
+}
+
+#productInCartBoxMain {
+  width: 80%;
+  margin-left: 3vw;
+}
+
+#productInCartBoxPrice {
+  width: 10%;
+  position: relative;
+}
+
+#productInCartBoxPrice h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#productInCartBoxPrice h2 {
+  position: absolute;
+  bottom: 5vh;
+  right: 0;
+}
+
+hr {
+  margin-left: 5vw;
+  margin-right: 5vw ;
+  height: 0.2vh;
+  background-color: #1d1d1f;
+  border: none;
+}

@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: Bahnschrift, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f5f5f7;
+}
+
+#continueShoppingButton, #placeOrderButton {
+  justify-content: center;
+  margin-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #B15DA8;
+  width: 15vw;
+  height: 8vh;
+  color: #f5f5f7;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 2%;
+}
+
+#shoppingCartHeadline {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  width: 10vw;
+}
+
+#totalPrice {
+  width: 88vw;
+  margin-left: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  height: 0.2vh;
+  background-color: #1d1d1f;
+  border: none;
+}
+
+#placeOrderButton {
+  margin-bottom: 5vh;
+}

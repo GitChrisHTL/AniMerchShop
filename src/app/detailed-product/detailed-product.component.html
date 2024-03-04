@@ -14,7 +14,7 @@
       <img src="./assets/star-outline-rounded.svg">
       <p>0 Rating(s)</p>
     </div>
-    <h1 id="title">{{ this.product?.name }}</h1>
+    <h1 id="title">{{ this.product?.series}} - {{ this.product?.name }}</h1>
     <div id="twoButtons">
       <a (click)="onAddToShoppingCart()"><div id="orderbutton">
         @if (product?.preOrder) {

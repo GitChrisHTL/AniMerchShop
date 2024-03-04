@@ -4,6 +4,7 @@ import {ProductsService} from "../products.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {DecimalPipe, NgIf} from "@angular/common";
 import {FooterComponent} from "../footer/footer.component";
+import {ShoppingCartService} from "../shopping-cart.service";
 
 @Component({
   selector: 'app-detailed-product',
@@ -21,6 +22,7 @@ export class DetailedProductComponent {
   route : ActivatedRoute = inject(ActivatedRoute);
   product : ProductInterface | undefined;
   productsService : ProductsService = inject(ProductsService);
+  shoppingCartService : ShoppingCartService = inject(ShoppingCartService);
 
   today : Date = new Date();
   otherDateString : string | undefined;
@@ -50,6 +52,9 @@ export class DetailedProductComponent {
     // @ts-ignore
     cartCount.textContent = newCartCount.toString();
     console.log(this.product?.name + ' added to your shopping cart!');
+    if(this.product) {
+      this.shoppingCartService.addToShoppingCart(this.product);
+    }
     void this.router.navigate(['']);
   }
 

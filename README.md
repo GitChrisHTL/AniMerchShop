@@ -7,7 +7,8 @@ AniMerchShop is an Angular-based web application dedicated to providing anime en
 - **Product Overview**: View all products on the homepage, sorted by figure, then pre order, lastly sale and then the same for manga.
 - **Product Details**: View detailed information about each product, including images, descriptions, and pricing.
 - **Product Not Found**: You will see a product not found page when searching for a product that does not exist.
-- **Add to Cart**: Select desired items and add them to the shopping cart for easy checkout. (WIP)
+- **Add to Cart**: Select desired items and add them to the shopping cart for easy checkout.
+- **Shopping Cart**: See your added items, change the order quantity or remove the item and place your order. (WIP)
 - **Page Not Found**: You will see a page not found page when searching for a page that does not exist.
 
 ## Technologies Used

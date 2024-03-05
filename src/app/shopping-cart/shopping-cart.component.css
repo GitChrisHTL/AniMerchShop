@@ -27,7 +27,8 @@ a {
 #shoppingCartHeadline {
   margin-top: 5vh;
   margin-left: 5vw;
-  width: 10vw;
+  display: inline-block;
+  width: auto;
 }
 
 #totalPrice {

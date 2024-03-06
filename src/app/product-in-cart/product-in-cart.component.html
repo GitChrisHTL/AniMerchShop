@@ -10,6 +10,14 @@
     } @else {
       <h3 style="color: #B15DA8; font-size: larger">Out Of Stock</h3>
     }
+    <div style="display: flex; align-items: center; margin-bottom: 3vh;">
+      <div id="productCountBox">
+        <div class="section minus">-</div>
+        <div class="section">1</div>
+        <div class="section plus">+</div>
+      </div>
+      <img src="./assets/delete.png" style="width: auto; height: 5vh">
+    </div>
   </div>
   <div id="productInCartBoxPrice">
     @if(productInterface.sale) {

@@ -21,6 +21,44 @@
   margin-left: 3vw;
 }
 
+#productCountBox {
+  font-family: Bahnschrift, Arial, sans-serif;
+  width: 20%;
+  height: auto;
+  font-size: 1.5rem;
+  display: flex;
+  border-radius: 10px;
+  border: solid #B15DA8 2px;
+}
+
+.section {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.section.minus {
+  border-radius: 10px 0 0 10px;
+  border-right: solid #B15DA8 2px;
+}
+.section.plus {
+  border-radius: 0 10px 10px 0;
+  border-left: solid #B15DA8 2px;
+}
+
+.section.minus:hover, .section.plus:hover {
+  cursor: pointer;
+}
+
+.section:first-child {
+  border-left: none;
+}
+
+.section:last-child {
+  border-right: none;
+}
+
+
 #productInCartBoxPrice {
   width: 10%;
   position: relative;

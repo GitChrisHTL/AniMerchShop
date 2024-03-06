@@ -19,30 +19,35 @@ header a {
 
 header > div {
   width: 100%;
-  position: absolute;
   display: flex;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 header img {
   width: 5vw;
-  height: 5vw;
+  height: auto;
 }
 
 #logo {
   margin-left: 5vw;
-  width: 10vw;
-  height: 10vw;
+  width: auto;
+  height: 20vh;
 }
 
 #categories {
+  margin-left: 2vw;
   font-family: Bahnschrift, Arial, sans-serif;
-  margin-top: 6vh;
+  width: auto;
   display: flex;
-  justify-content: space-around;
-  width: 30vw;
+  align-items: center;
+}
+
+#categories h2 {
+  padding: 1.5vw;
+  cursor: pointer;
+}
+
+#categories h2:hover {
+  background-color: #f0f0f0;
 }
 
 hr {
@@ -53,9 +58,8 @@ hr {
 
 #shoppingCart {
   position: absolute;
-  top: 40%;
-  right: 5vw;
-  transform: translate(-50%, -50%);
+  right: 7vw;
+  margin-top: 3vh;
 }
 
 #cartCount {

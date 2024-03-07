@@ -10,7 +10,7 @@
     }
     @if (productInterface.sale) {
       <div style="display: flex; width: 100%; justify-content: space-evenly">
-        <s><h2>{{ productInterface.price }}€</h2></s>
+        <s><h2>{{ productInterface.price | number: '1.2-2' }}€</h2></s>
         <br>
         <h1>{{ productInterface.price * productInterface.saleReduction | number:'1.2-2' }}€</h1>
       </div>
@@ -18,7 +18,7 @@
         <h3>SALE {{ Math.round((1 - productInterface.saleReduction)*100) }}% OFF</h3>
       </div>
     } @else {
-      <h1>{{ productInterface.price }}€</h1>
+      <h1>{{ productInterface.price | number: '1.2-2' }}€</h1>
     }
   </div></a>
 </div>

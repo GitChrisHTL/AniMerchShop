@@ -27,11 +27,11 @@
         }
         @if (product?.sale) {
           <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 5%;">
-            <s><h3>{{ product.price }}€</h3></s>
+            <s><h3>{{ product.price | number: '1.2-2' }}€</h3></s>
             <h1>{{ product.price * product.saleReduction | number:'1.2-2' }}€</h1>
           </div>
         } @else {
-          <h1 id="price">{{ this.product?.price }}€</h1>
+          <h1 id="price">{{ this.product?.price | number: '1.2-2' }}€</h1>
         }
       </div></a>
       <div id="infoButton">

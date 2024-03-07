@@ -12,19 +12,23 @@
     }
     <div style="display: flex; align-items: center; margin-bottom: 3vh;">
       <div id="productCountBox">
-        <div class="section minus">-</div>
-        <div class="section">1</div>
-        <div class="section plus">+</div>
+        <div class="section minus" (click)="onDecreaseProductCount()">-</div>
+        <div class="section">{{ productInterface.productCountInCart }}</div>
+        <div class="section plus" (click)="onIncreaseProductCount()">+</div>
       </div>
-      <img src="./assets/delete.png" style="width: auto; height: 5vh">
+      <img id="delete" src="./assets/delete.png" style="width: auto; height: 5vh" (click)="onRemoveProductFromCart()">
     </div>
   </div>
   <div id="productInCartBoxPrice">
     @if(productInterface.sale) {
-      <h2 style="text-decoration: line-through">{{ productInterface.price }}€</h2>
-      <h1>{{ productInterface.price * productInterface.saleReduction | number:'1.2-2' }}€</h1>
+      <h2 style="text-decoration: line-through" id="priceBeforeSale">
+        {{ (productInterface.price * productInterface.productCountInCart) | number :'1.2-2' }}€
+      </h2>
+      <h1 id="priceAfterSale">
+        {{ ((productInterface.price * productInterface.saleReduction) * productInterface.productCountInCart) | number :'1.2-2' }}€
+      </h1>
     } @else {
-      <h1>{{ productInterface.price }}€</h1>
+      <h1 id="price">{{ (productInterface.price * productInterface.productCountInCart) | number :'1.2-2' }}€</h1>
     }
   </div>
 </div>

@@ -29,7 +29,8 @@ export class ShoppingCartComponent {
   }
 
   getTotalPrice(): number {
-    const totalPrice = this.productsInCart.reduce((total, product) => total + this.getSalePrice(product), 0);
+    const totalPrice = this.productsInCart.reduce((total, product) =>
+      total + (this.getSalePrice(product) * product.productCountInCart), 0);
     return parseFloat(totalPrice.toFixed(2));
   }
 

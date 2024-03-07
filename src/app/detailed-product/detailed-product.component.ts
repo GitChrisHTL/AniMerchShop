@@ -54,6 +54,7 @@ export class DetailedProductComponent {
     console.log(this.product?.name + ' added to your shopping cart!');
     if(this.product) {
       this.shoppingCartService.addToShoppingCart(this.product);
+      this.product.productCountInCart++;
     }
     void this.router.navigate(['']);
   }

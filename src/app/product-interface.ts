@@ -12,5 +12,6 @@ export interface ProductInterface {
   saleReduction : number,
   stock : number,
   description : string,
-  type : string
+  type : string,
+  productCountInCart : number
 }

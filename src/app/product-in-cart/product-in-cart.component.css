@@ -58,6 +58,9 @@
   border-right: none;
 }
 
+#delete:hover {
+  cursor: pointer;
+}
 
 #productInCartBoxPrice {
   width: 10%;

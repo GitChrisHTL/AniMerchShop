@@ -24,6 +24,22 @@ export class ShoppingCartService {
     return result;
   }
 
+  removeFromShoppingCart(product: ProductInterface): boolean {
+    let result: boolean = false;
+
+    if (this.containsProduct(product)) {
+      let indexToRemove = this.products.findIndex(item => item === product);
+
+      if (indexToRemove !== -1) {
+        this.products.splice(indexToRemove, 1);
+        result = true;
+      }
+    }
+
+    return result;
+  }
+
+
   getProductsInShoppingCart() : ProductInterface[] {
     return this.products;
   }

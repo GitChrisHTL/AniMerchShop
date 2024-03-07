@@ -17,7 +17,7 @@
   @if(productsInCart.length > 0) {
     <div id="totalPrice">
       <h2>Total:</h2>
-      <h1>{{ getTotalPrice() }}€</h1>
+      <h1>{{ getTotalPrice() | number: '1.2-2' }}€</h1>
     </div>
     <div id="placeOrderButton">
       <h2>Place Order</h2>

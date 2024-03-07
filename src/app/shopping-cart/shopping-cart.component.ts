@@ -1,7 +1,7 @@
 import {Component, inject} from '@angular/core';
 import {FooterComponent} from "../footer/footer.component";
 import {ShoppingCartService} from "../shopping-cart.service";
-import {NgForOf} from "@angular/common";
+import {DecimalPipe, NgForOf} from "@angular/common";
 import {ProductComponent} from "../product/product.component";
 import {ProductInCartComponent} from "../product-in-cart/product-in-cart.component";
 import {ProductInterface} from "../product-interface";
@@ -15,7 +15,8 @@ import {RouterLink} from "@angular/router";
     NgForOf,
     ProductComponent,
     ProductInCartComponent,
-    RouterLink
+    RouterLink,
+    DecimalPipe
   ],
   templateUrl: './shopping-cart.component.html',
   styleUrl: './shopping-cart.component.css'

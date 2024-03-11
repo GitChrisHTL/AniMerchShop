@@ -1,0 +1,12 @@
+<div id="deliveryDetailsHeadline">
+  <h3>Delivery Details<hr></h3>
+</div>
+@if(productsInCart.length == 0) {
+  <p style="margin-top: 5vh;text-align: center">Your shopping cart is currently empty</p>
+  <a [routerLink]="''"><div id="continueShoppingButton">
+    <h2>Continue Shopping</h2>
+  </div></a>
+  <app-footer style="width: 100vw; bottom: 0; position: fixed;"></app-footer>
+} @else {
+  <app-footer></app-footer>
+}

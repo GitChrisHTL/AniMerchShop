@@ -24,6 +24,10 @@ a {
   padding-top: 2%;
 }
 
+#placeOrderButton:hover {
+  cursor: pointer;
+}
+
 #shoppingCartHeadline {
   margin-top: 5vh;
   margin-left: 5vw;

@@ -1,5 +1,5 @@
 <div id="shoppingCartHeadline">
-  <h2>Shopping Cart<hr></h2>
+  <h3>Shopping Cart<hr></h3>
 </div>
 @if(productsInCart.length == 0) {
   <p style="margin-top: 5vh;text-align: center">Your shopping cart is currently empty</p>
@@ -19,7 +19,7 @@
       <h2>Total:</h2>
       <h1>{{ getTotalPrice() | number: '1.2-2' }}€</h1>
     </div>
-    <div id="placeOrderButton">
+    <div id="placeOrderButton" [routerLink]="'/deliveryDetails'">
       <h2>Place Order</h2>
     </div>
   }
